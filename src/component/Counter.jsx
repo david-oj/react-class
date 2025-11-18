@@ -11,7 +11,7 @@ const Counter = () => {
 
         <div className="space-x-4 mt-4">
           <button className='border rounded-lg bg-black text-white px-3 py-2 cursor-pointer ' onClick={() => setCount(count + 1)}>Increment</button>
-          <button className='border rounded-lg bg-black text-white px-3 py-2 cursor-pointer ' onClick={() => setCount(count - 1)}>Decrement</button>
+          <button disabled={count < 1} className='border rounded-lg bg-black text-white px-3 py-2 cursor-pointer ' onClick={() => setCount(count - 1)}>Decrement</button>
         </div>
       </div>
     </div>
