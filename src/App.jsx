@@ -1,16 +1,19 @@
 import Greeting from "./component/Greeting"
 import UserCard from "./component/UserCard"
-import { img1, img2, img3, flower } from "./assets"
+// import { img1, img2, img3, flower } from "./assets"
 import Counter from "./component/Counter"
 import TextInput from "./component/TextInput"
-import FetchData from "./component/FetchData"
+import FetchData from "./component/ChangeColor"
+import AutoCount from "./component/AutoCount"
+import ChangeColor from "./component/ChangeColor"
+import AnimePage from "./page/AnimePage"
 
 function App() {
 
 
   return (
     <>
-      <Greeting />
+      {/* <Greeting />
       <div className="flex gap-6 flex-wrap justify-center">
         <UserCard name="John Doe" title="Project Manager" age={25} image={img1} hobbies={["Reading", "Coding", "Cooking", "Swimming"]} />
         <UserCard name="Greg Smith" title="Software Engineer" age={35} image={img2} hobbies={["Cooking", "Coding", "Sleeping"]} />
@@ -20,9 +23,11 @@ function App() {
       </div>
 
       <Counter />
-
       <TextInput />
-      <FetchData />
+      <ChangeColor />
+      <AutoCount/> */}
+
+      <AnimePage/>
     </>
   )
 }
