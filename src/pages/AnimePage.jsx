@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import AnimeCard from "./AnimeCard";
+import AnimeCard from "../component/AnimeCard";
 
 const AnimePage = () => {
   const [loading, setLoading] = useState(true);
@@ -47,7 +47,7 @@ const AnimePage = () => {
         ) : error ? (
           <p className="mt-10 text-red-400 text-lg flex-1 mx-auto">{error}</p>
         ) : (
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-[repeat(autofit,minmax(250px,1fr))]">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
             {animeData.length > 0 ? (
               animeData.map((anime, id) => <AnimeCard anime={anime} key={id} />)
             ) : (
