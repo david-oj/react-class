@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import AnimeCard from "../component/AnimeCard";
+import AnimeCard from "../../component/AnimeCard";
 
-const AnimePage = () => {
+const Anime = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [page, setPage] = useState(1);
@@ -76,4 +76,4 @@ const AnimePage = () => {
   );
 };
 
-export default AnimePage;
+export default Anime;

@@ -6,13 +6,14 @@ import TextInput from "./component/TextInput";
 import FetchData from "./component/ChangeColor";
 import AutoCount from "./component/AutoCount";
 import ChangeColor from "./component/ChangeColor";
-import AnimePage from "./pages/AnimePage";
+import Anime from "./pages/anime/Anime";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PageLayout from "./component/PageLayout";
 import NotFound from "./component/NotFound";
+import AnimePage from "./pages/anime/AnimePage";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
-          <Route path="/anime" element={<AnimePage />} />
+          <Route path="/anime" element={<Anime />} />
+          <Route path="/anime/:id" element={ <AnimePage />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
